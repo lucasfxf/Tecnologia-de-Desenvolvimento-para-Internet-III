@@ -1,99 +1,198 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
-   
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-        <title> Meu Currículo </title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header>
-            <h1> Lucas Felipe de Souza Farias</h1>
-            <p> Estudante de Sistemas de Informação </p>
-        </header>
+    <title>Lucas Felipe | Currículo</title>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#formacao">Formação</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
 
-        <main>
-            <section id="inicio">
-                <h2> Sobre mim </h2>
-                <p>
-                    Estudante de Sistemas de Informação no IFSULDEMINAS,
-                    atualmente no 4º período, com interesse em tecnologia
-                    e aprendizado contínuo. Busco uma oportunidade de estágio
-                    para desenvolver minhas competências técnicas e profissionais,
-                    contribuindo com dedicação, organização e vontade de aprender.
-                </p>
-            </section>
+<body>
+    <header id="inicio">
+        <img src="../Img/fotoCurriculo.jpeg" alt="Foto de Lucas Felipe de Souza Farias">
 
-            <section id="formacao">
-                <h2> Formação Acadêmica </h2>
+        <div class="header-content">
+            <p class="tag">SISTEMAS DE INFORMAÇÃO</p>
 
-                <ul>
-                    <li>
-                        Sistemas de Informação - IFSULDEMINAS, Campus Machado - MG
-                        <br>
-                        Cursando
-                    </li>
+            <h1>Lucas Felipe de Souza Farias</h1>
 
-                    <li>
-                        Ensino Médio - Escola Estadual Padre Piccinini,
-            Paraguaçu - MG
-                    </li>
+            <p class="subtitle">
+                Estudante de Sistemas de Informação
+            </p>
+        </div>
+    </header>
 
-                    <li>
-                        Ensino Fundamental - Escola Estadual Fundamar,
-            Paraguaçu - MG
-                    </li>
-                </ul>
-            </section>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#formacao">Formação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-            <section id="projetos">
-                <h2> Projetos </h2>
-                
-                <article> 
-                    <h3> Sistema de Agendamento Médico </h3>
+    <main>
 
-                    <p> Python • Dash • SQLite </p>
+        <section id="sobre">
+            <div class="section-title">
+                <span>01</span>
+                <h2>Sobre mim</h2>
+            </div>
 
-                    <p> Sistema para cadastro de pacientes, médicos,
-                        horários e agendamentos.</p>
+            <p>
+                Estudante de Sistemas de Informação no IFSULDEMINAS,
+                atualmente no 4º período, com interesse em tecnologia
+                e aprendizado contínuo. Busco uma oportunidade de estágio
+                para desenvolver minhas competências técnicas e profissionais,
+                contribuindo com dedicação, organização e vontade de aprender.
+            </p>
+        </section>
+
+
+        <section id="formacao">
+
+            <div class="section-title">
+                <span>02</span>
+                <h2>Formação Acadêmica</h2>
+            </div>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div>
+                        <h3>Sistemas de Informação</h3>
+
+                        <p class="institution">
+                            IFSULDEMINAS - Campus Machado
+                        </p>
+
+                        <p>
+                            Graduação em andamento — 4º período.
+                        </p>
+                    </div>
                 </article>
 
-                <article>
-                    <h3> Sistema Web com Banco de Dados</h3>
 
-                    <p> HTML • CSS • JavaScript • SQL</p>
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
 
-                    <p> Site integrado a banco de dados com cadastro,
-                        consulta e atualização de informações sobre filmes.</p>
+                    <div>
+                        <h3>Ensino Médio</h3>
+
+                        <p class="institution">
+                            Escola Estadual Padre Piccinini
+                        </p>
+
+                        <p>
+                            Paraguaçu - MG
+                        </p>
+                    </div>
                 </article>
 
-                <article>
-                     <h3>To-Do List</h3>
 
-                    <p> HTML • CSS • JavaScript</p>
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
 
-                    <p> Aplicação CRUD utilizando LocalStorage.</p>
+                    <div>
+                        <h3>Ensino Fundamental</h3>
+
+                        <p class="institution">
+                            Escola Estadual Fundamar
+                        </p>
+
+                        <p>
+                            Paraguaçu - MG
+                        </p>
+                    </div>
                 </article>
-            </section>
 
-            <section id="habilidades">
-                <h2> Habilidades </h2>
+            </div>
+        </section>
 
-                <article>
-                    <h3> Linguagens de Programação </h3>
 
-                    <ul> 
-                       <li>Java</li>
+        <section id="projetos">
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Projetos</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-number">01</div>
+
+                    <h3>Sistema de Agendamento Médico</h3>
+
+                    <p class="technologies">
+                        Python • Dash • SQLite
+                    </p>
+
+                    <p>
+                        Sistema para cadastro de pacientes, médicos,
+                        horários e agendamentos.
+                    </p>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">02</div>
+
+                    <h3>Sistema Web com Banco de Dados</h3>
+
+                    <p class="technologies">
+                        HTML • CSS • JavaScript • SQL
+                    </p>
+
+                    <p>
+                        Site integrado a banco de dados com cadastro,
+                        consulta e atualização de informações sobre filmes.
+                    </p>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">03</div>
+
+                    <h3>To-Do List</h3>
+
+                    <p class="technologies">
+                        HTML • CSS • JavaScript
+                    </p>
+
+                    <p>
+                        Aplicação CRUD utilizando LocalStorage.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <section id="habilidades">
+
+            <div class="section-title">
+                <span>04</span>
+                <h2>Habilidades</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3>Linguagens de Programação</h3>
+
+                    <ul>
+                        <li>Java</li>
                         <li>C#</li>
                         <li>JavaScript</li>
                         <li>C</li>
@@ -101,61 +200,125 @@
                     </ul>
                 </article>
 
-                <article> 
-                    <h3> Desenvolvimento Web </h3>
 
-                    <ul> 
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <h3> Banco de Dados </h3>
-                    <ul> 
-                        <li> SQL </li>
-                        <li> Banco de Dados Relacional </li>
-                    </ul>
-                </article>
-
-                <article>
-
-                    <h3> Desenvolvimento de Jogos</h3>
+                <article class="skill-card">
+                    <h3>Desenvolvimento Web</h3>
 
                     <ul>
-                       <li> Godot Engine</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
                     </ul>
                 </article>
-            </section>
 
-            <section id="contato">
-                <h2> Contato </h2>
 
-                <p>
-                WhatsApp:
-                <a href="https://wa.me/5535999096535">
-                    +55 (35) 99909-6535
+                <article class="skill-card">
+                    <h3>Banco de Dados</h3>
+
+                    <ul>
+                        <li>SQL</li>
+                        <li>Banco de Dados Relacional</li>
+                    </ul>
+                </article>
+
+
+                <article class="skill-card">
+                    <h3>Desenvolvimento de Jogos</h3>
+
+                    <ul>
+                        <li>Godot Engine</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section id="contato">
+
+            <div class="section-title">
+                <span>05</span>
+                <h2>Contato</h2>
+            </div>
+
+            <div class="contact-grid">
+
+                <a
+                    class="contact-card"
+                    href="https://wa.me/5535999096535"
+                    target="_blank"
+                >
+                    <span>WHATSAPP</span>
+                    <strong>+55 (35) 99909-6535</strong>
                 </a>
-                </p>
 
-                <p>Email:
-                <a href="mailto:lucasfelipesf19@gmail.com">Lucasfelipesf19@gmail.com</a>
-                </p>
-            </section>
 
-        </main>
+                <a
+                    class="contact-card"
+                    href="mailto:lucasfelipesf19@gmail.com"
+                >
+                    <span>EMAIL</span>
+                    <strong>lucasfelipesf19@gmail.com</strong>
+                </a>
 
-        <aside>
-            <h2> Informações Complementares </h2>
-            <p> Localização: Paraguaçu - MG </p>
-            <p> 
-                GitHub: 
-                 <a href="https://github.com/lucasfxf">Meu GitHub</a>
-            </p>
-        </aside>
 
-        <footer>
-            <p>© 2026 Lucas Felipe de Souza Farias</p>
-        </footer>
-    </body>
+                <a
+                    class="contact-card"
+                    href="https://github.com/lucasfxf"
+                    target="_blank"
+                >
+                    <span>GITHUB</span>
+                    <strong>github.com/lucasfxf</strong>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <aside>
+
+        <h2>Informações Complementares</h2>
+
+        <p>
+            <strong>Localização</strong>
+            Paraguaçu - MG
+        </p>
+
+        <p>
+            <strong>Área de interesse</strong>
+            Desenvolvimento de Software
+        </p>
+
+        <p>
+            <strong>Disponibilidade</strong>
+            Oportunidade de estágio
+        </p>
+
+    </aside>
+
+
+    <footer>
+
+        <p>
+            © 2026 Lucas Felipe de Souza Farias
+        </p>
+
+        <p>
+            Desenvolvido com HTML, CSS e JavaScript.
+        </p>
+
+    </footer>
+
+
+    <button id="backToTop" title="Voltar ao topo">
+        ↑
+    </button>
+
+
+    <script src="../Js/Script.js"></script>
+
+</body>
+
 </html>
