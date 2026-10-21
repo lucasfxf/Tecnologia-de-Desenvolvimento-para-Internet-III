@@ -1,0 +1,15 @@
+
+# Arquivos gerados pelo Eclipse/Java
+build/
+target/
+*.class
+
+# Configurações locais
+.metadata/
+Servers/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+db.properties
